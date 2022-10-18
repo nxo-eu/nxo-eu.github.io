@@ -1,13 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
     <title>NXO NetDevOps - Team NANO</title>
 </head>
 <body>
-	<footer>&copy; 2021-2022 NXO NetDevOps - Team NANO</footer>
+    <h1 align="center"> NXO NetDevOps - Team NANO </h1>
+
+    <span lang="en">Here goes the navbar including translation button.</span>
+    <span lang="fr">Ici va la navbar avec le bouton de traduction.</span>
+    <form align="right">
+        <label for="lang-switch">
+            <span lang="en">Language</span>
+            <span lang="fr">Langage</span>
+        </label>
+        <select id="lang-switch">
+            <option value="en" selected>English</option>
+            <option value="fr">Français</option>
+        </select>
+    </form>
+    <h2> Description </h2>
+    <p>
+        <span lang="en"> A paragraphe describing NetDevOps and presenting globally the NANO team. </span>
+        <span lang="fr"> Un paragraphe décrivant le NetDevOps et présentant globalement l'équipe NANO. </span>
+    </p>
+
+    <h2>  Hackadays - Hackathons </h2>
+    <ul>
+        <li> 
+            <span lang="en"> Months (duration) - This is a brief description. </span>
+            <span lang="fr"> Mois (durée) - Une courte description. </span>
+        </li>
+    </ul>
+
+    <h2> Publications </h2>
+    <ul>
+        <li> Date - <a href=""> Nom publication </a> </li>
+    </ul>
+    
+    <h2> 
+        <span lang="en"> The team </span>
+        <span lang="fr"> L'équipe </span>
+    </h2>
+    <ul>
+        <li> NOM prenom - <a href=""> Site Web </a> </li>
+    </ul>
+
+    <footer>&copy; 2021-2022 NXO NetDevOps - Team NANO</footer>
 </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+$('[lang]').hide(); // hide all lang attributes on start.
+$('[lang="en"]').show(); // show just English text 
+$('#lang-switch').change(function () { // put onchange event when user select option from select
+    var lang = $(this).val(); // decide which language to display using switch case.
+    switch (lang) {
+        case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        case 'fr':
+            $('[lang]').hide();
+            $('[lang="fr"]').show();
+        break;
+        default:
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        }
+});
+</script>
