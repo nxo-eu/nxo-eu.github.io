@@ -1,3 +1,17 @@
+<!--
+# ********************************************************************************** #
+#                                                                                    #
+#                                   ::::    :::     :::     ::::    :::  ::::::::    #
+#   Index HTML                     :+:+:   :+:   :+: :+:   :+:+:   :+: :+:    :+:    #
+#                                 :+:+:+  +:+  +:+   +:+  :+:+:+  +:+ +:+    +:+     #
+#   Powered by: Team NANO        +#+ +:+ +#+ +#++:++#++: +#+ +:+ +#+ +#+    +:+      #
+#                               +#+  +#+#+# +#+     +#+ +#+  +#+#+# +#+    +#+       #
+#   NXO                        #+#   #+#+# #+#     #+# #+#   #+#+# #+#    #+#        #
+#                             ###    #### ###     ### ###    ####  ########          #
+#                                                                                    #
+# ********************************************************************************** #
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,30 +32,32 @@
     </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: #000;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <a class="navbar-brand" href="index.html">LOGO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="https://nxo.eu" target="_blank">NXO</a>
-            </li>
-            <li class="nav-item">
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="en">Language</span>
+                <span class="fr">Langage</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><span class="dropdown-item" >FR</span></li>
+                <li><span class="dropdown-item" >EN</span></li>
+              </ul>
+              <li class="nav-item">
                 <a class="nav-link" href="https://github.com/nxo-eu" target="_blank">GitHub</a>
             </li>
-            <!-- <li class="nav-item dropdown"> -->
-            <!--   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
-            <!--     Dropdown link -->
-            <!--   </a> -->
-            <!--   <ul class="dropdown-menu"> -->
-            <!--     <li><a class="dropdown-item" href="#">Action</a></li> -->
-            <!--     <li><a class="dropdown-item" href="#">Another action</a></li> -->
-            <!--     <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            <!--   </ul> -->
-            <!-- </li> -->
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="https://www.nxo.eu/">
+                <img class="img-responsive" src="nxo_white_logo_black_background_web.jpg" alt="Logo NXO" >
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -50,34 +66,191 @@
 
     <!-- MAIN CONTAINER -->
     <main class="main-container">
+      <div id="description">
+        <h3 class="categories">
+          <span class="en">NetDevOps: An alliance of the fundamentals of the DevOps movement and the network</span>
+          <span class="fr">NetDevOps : Une alliance des fondamentaux de la mouvance DevOps et du réseau</span>
+        </h3>
+        <div class="category-container">
+          <p>
+            <span class="en">DevOps unifies the development of a solution and its administration through a set of practices such as the automation of certain tasks, the execution of tests and the communication between different teams.
+              This results in shorter development cycles and more frequent deliveries.</span>
+            <span class="fr">Le DevOps unifie le développement d'une solution et l'administration de celle-ci à travers un ensemble de pratiques telles que l'automatisation de certaines tâches, la réalisation de tests et la communication entre les différentes équipes.
+              Il en résulte des cycles de développement plus courts et des livraisons plus fréquentes.</span>
+          </p>
+          <p>
+            <span class="en">NetDevOps is a multi-vendor, multi-editor, multi-technology, cross-functional approach that centralizes and consolidates infrastructure metrics and provides complete visibility across all silos. The NetDevOps practice ensures operational reliability.
+            </span>
+            <span class="fr">Le NetDevOps est une approche transverse agnostique multi-constructeurs, multi-éditeurs et multi-technologies qui permet de centraliser et consolider les paramètres de l’infrastructure, et donne une visibilité complète sur l’ensemble des silos. La pratique NetDevOps garantit la sureté de fonctionnement.
+            </span>
+          </p>
+          <ul>
+            <li>
+              <span class="en">It addresses the need for execution and security to accelerate the deployment and evolution of the network infrastructure at the same pace as the systems and applications.</span>
+            <span class="fr">Elle répond au besoin d’exécution et de sécurisation pour accélérer le déploiement et les évolutions de l’infrastructure réseau au même rythme que les systèmes et les applications.</span>
+            </li>
+            <li>
+              <span class="en">It ensures rapid deployment of configurations, as well as compliance and security with network infrastructure operation and maintenance objectives.</span>
+            <span class="fr">Elle assure le déploiement des configurations avec rapidité, ainsi que la conformité et la sécurisation par rapport aux objectifs de fonctionnement et de maintien en condition opérationnelle des infrastructures réseaux.</span>
+            </li>
+          </ul>
+            <p>
+              <span class="en">Visibility on the whole infrastructure is possible thanks to telemetry and monitoring.</span>
+              <span class="fr">La visibilité sur l’ensemble des infrastructures est possible grâce à la télémétrie et le monitoring.</span>
+            </p>
+            <p>
+              <span class="en">In summary, the NetDevOps approach will provide you with concrete answers in 5 main areas related to improving availability:</span>
+              <span class="fr">En résumé, l'approche NetDevOps vous apportera des réponses concrètes sur 5 axes principaux liés à l'amélioration de la disponibilité :</span>
+            </p>
+            <ul>
+              <li>
+                <span class="en"><strong>Heterogeneity</strong>: Deal with the volume of your equipment and their technological diversity</span>
+              <span class="fr"><strong>Hétérogénéité </strong>: Faites face au volume de vos équipements et à leur diversité technologique</span>
+              </li>
+              <li>
+                <span class="en"><strong>Inventories</strong>: Quickly generate a complete status of your networks</span>
+              <span class="fr"><strong>Inventaires </strong>: Générez rapidement un état complet de vos réseaux</span>
+              </li>
+              <li>
+                <span class="en"><strong>Operational maintenance</strong>: Manage your maintenance and maintain the competence of your teams</span>
+              <span class="fr"><strong>Maintien opérationnel </strong>: Gérez vos maintenances et maintenez la compétence de vos équipes</span>
+              </li>
+              <li>
+                <span class="en"><strong>Structural changes</strong>: Make your networks evolve and be part of a continuous improvement process</span>
+              <span class="fr"><strong>Changements structurants </strong>: Faites évoluer vos réseaux et inscrivez-vous dans une démarche d'amélioration continue</span>
+              </li>
+              <li>
+                <span class="en"><strong>Compliance</strong>: Be sure that your equipment and configurations are up to date with best practices</span>
+              <span class="fr"><strong>Conformité </strong>: Soyez assurés de la mise à jour de vos équipements et de leurs configurations avec les bonnes pratiques</span>
+              </li>
+            </ul>
+            <p>
+              <span class="en">NXO's NANO Team is a dedicated team of experts in the NetDevOps approach, to meet your needs and guide you towards the most suitable solution. Our tools and methods allow us to operate efficiently regardless of the size of your network infrastructure.</span>
+              <span class="fr">La Team NANO de NXO, c'est une équipe dédiée d'experts de l'approche NetDevOps, pour répondre à votre besoin et vous guider vers la solution la plus adaptée. Nos outils et nos méthodes nous permettent d'opérer de manière efficiente quelle que soit la taille de votre infrastructure réseau.</span>
+            </p>
+            <p>
+              <span class="en">Our team members come from different backgrounds, have cross-disciplinary skills and share a set of values such as respect for know-how, innovation and mutual support (help on Team values)</span>
+              <span class="fr">Les membres de notre équipe viennent d'horizons différents, possèdent des compétences transverses et partagent un ensemble de valeurs telles que le respect du savoir-faire, l'innovation et l'entraide (help sur les valeurs de la Team)</span>
+            </p>
+        </div>
+          <!-- <li>
+            <span class="en"></span>
+          <span class="fr"></span>
+          </li>
+        <p>
+          <span class="en"></span>
+          <span class="fr"></span>
+        </p> -->
+      </div>
 
+      <hr>
+
+      <div id="contact">
+        <h3 class="categories">
+          <span class="en">Contact</span>
+          <span class="fr">Contact</span>
+        </h3>
+        <div class="category-container">
+          <p>
+            <span class="en">We would be delighted to discuss with you the practice of NetDevOps and how you can benefit from it. </span>
+            <span class="fr">Nous serions ravis d'échanger avec vous sur la pratique du NetDevOps et sur la manière dont vous pourriez en tirer bénéfice. </span>
+          </p>
+          <!-- <a href=link_contact>Contact Team NANO</a> -->
+          <p>Official repository: <a href="https://github.com/nxo-eu" target="_blank">GitHub</a></p>
+        </div>
+          <!-- <li>
+            <span class="en"></span>
+          <span class="fr"></span>
+          </li>
+        <p>
+          <span class="en"></span>
+          <span class="fr"></span>
+        </p> -->
+      </div>
+
+      <hr>
+
+      <div id="publications">
+        <h3 class="categories">
+          <span class="en">Publications</span>
+          <span class="fr">Publications</span>
+        </h3>
+        <div class="category-container">
+          <p>
+            <span class="en">
+              <em>Introduction to the Artificial Intelligence that can be applied to the Network Automation Journey</em>: <a href="https://arxiv.org/abs/2204.00800">Source</a> (arXiv.org)
+            </span>
+            <span class="fr"></span>
+          </p>
+          <p>
+            <span class="en">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5nmO4MBs2r3vcqpU3Wq4mS?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></span>
+            <span class="fr">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5nmO4MBs2r3vcqpU3Wq4mS?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></span>
+            </span>
+          </p>
+          <p>
+            <span class="en">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7cEP5v6C2nvKOMrP87gGnT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </span>
+            <span class="fr">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7cEP5v6C2nvKOMrP87gGnT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="hackathons">
+        <h3 class="categories">
+          <span class="en">Hackathons</span>
+          <span class="fr">Hackathons</span>
+        </h3>
+        <div class="category-container">
+          <ul>
+            <li>
+            <span class="en">Wed 09/14/22 - Fri 09/16/22</span>
+            <span class="fr">Mer 14/09/2022 - Ven 16/09/2022</span>
+            </li>
+            <li>
+              <span class="en">Wed 04/13/22 - Fri 04/15/22</span>
+              <span class="fr">Mer 13/04/2022 - Ven 15/04/2022</span>
+            </li>
+            <li>
+              <span class="en">Tue 01/04/22 - Thu 01/06/22</span>
+              <span class="fr">Mar 04/01/2022 - Jeu 06/01/2022</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="team">
+        <h3 class="categories">
+          <span class="en">Team</span>
+          <span class="fr">L'équipe</span>
+        </h3>
+        <div class="category-container">
+          <p>
+            <span class="en">A team of <strong>12 people</strong> dedicated and regularly trained on NetDevOps technologies.</span>
+            <span class="fr">Une équipe de <strong>12 personnes</strong> dédiée et entraînée régulièrement sur les technologies du NetDevOps.</span>
+          </p>
+        </div>
+          <!-- <li>
+            <span class="en"></span>
+          <span class="fr"></span>
+          </li>
+        <p>
+          <span class="en"></span>
+          <span class="fr"></span>
+        </p> -->
+      </div>
     </main>
     <!-- MAIN CONTAINER -->
     <footer>&copy; 2021 - <span id="current_year"></span> NXO NetDevOps - Team NANO</footer>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
-
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script>
-$('[lang]').hide(); // hide all lang attributes on start.
-$('[lang="en"]').show(); // show just English text 
-$('#lang-switch').change(function () { // put onchange event when user select option from select
-    var lang = $(this).val(); // decide which language to display using switch case.
-    switch (lang) {
-        case 'en':
-            $('[lang]').hide();
-            $('[lang="en"]').show();
-        break;
-        case 'fr':
-            $('[lang]').hide();
-            $('[lang="fr"]').show();
-        break;
-        default:
-            $('[lang]').hide();
-            $('[lang="en"]').show();
-        }
-});
-</script>
