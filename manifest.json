@@ -1,0 +1,13 @@
+{
+    "name": "Team Nano",
+    "display": "standalone",
+    "background_color": "#fafafa",
+    "description": "NXO NetDevOps - Team NANO",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "32x32",
+            "type": "images/ico"
+        }
+    ]
+}
